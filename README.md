@@ -45,7 +45,11 @@ Short range
 | Beam broken | LOW    |
 
 
-
+#Components Inside IR Module
+IR LED
+Photodiode / Phototransistor
+Comparator (sometimes)
+Resistors
 
 #Components Inside IR Module
 IR LED
