@@ -56,3 +56,15 @@ IR LED
 Photodiode / Phototransistor
 Comparator (sometimes)
 Resistors
+
+## 🔹 Project Summary
+
+The project titled **“IR Beam-Based Room Occupancy Detection System (RoomSense IR)”** presents a low-cost, efficient, and non-intrusive solution for real-time room occupancy detection. The system is designed to automatically determine whether a room is occupied or vacant without requiring any manual intervention.
+
+The proposed system utilizes two IR break beam sensor pairs positioned at the entrance of a room to detect the direction of movement. By analyzing the sequence in which the beams are interrupted, the system distinguishes between entry and exit events. This information is processed using digital logic circuits, specifically AND gates (7408) for sequence detection and NAND gates (7400) configured as an SR latch for maintaining the occupancy state.
+
+When a person enters the room, the system sets the latch, indicating an occupied state, and activates an LED indicator. Conversely, when a person exits, the latch is reset, marking the room as vacant and turning off the indicator. The system operates entirely on hardware logic, eliminating the need for microcontrollers or software programming, thereby ensuring simplicity, reliability, and low power consumption.
+
+This solution is particularly suitable for applications such as classrooms, laboratories, restrooms, and office spaces where automatic occupancy indication is required. While the system demonstrates high accuracy under proper alignment, it has certain limitations, including sensitivity to ambient light and inability to handle multiple simultaneous entries. Future enhancements may include integration with microcontrollers, IoT-based monitoring, and occupancy counting features.
+
+Overall, the project successfully demonstrates the practical implementation of basic electronics and digital logic principles to solve a real-world problem in an efficient and scalable manner.
