@@ -25,7 +25,7 @@ Output = LOW
 This change is detected by circuit
 
 Types of IR Sensors
-#Break Beam Sensor (Used in YOUR project 🔥)
+#Break Beam Sensor (Used in OUR project )
 Separate transmitter & receiver
 Accurate
 Used for entry/exit detection
