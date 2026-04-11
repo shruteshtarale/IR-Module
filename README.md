@@ -57,7 +57,7 @@ Photodiode / Phototransistor
 Comparator (sometimes)
 Resistors
 
-## 🔹 Project Summary
+ Project Summary
 
 The project titled **“IR Beam-Based Room Occupancy Detection System (RoomSense IR)”** presents a low-cost, efficient, and non-intrusive solution for real-time room occupancy detection. The system is designed to automatically determine whether a room is occupied or vacant without requiring any manual intervention.
 
@@ -68,3 +68,34 @@ When a person enters the room, the system sets the latch, indicating an occupied
 This solution is particularly suitable for applications such as classrooms, laboratories, restrooms, and office spaces where automatic occupancy indication is required. While the system demonstrates high accuracy under proper alignment, it has certain limitations, including sensitivity to ambient light and inability to handle multiple simultaneous entries. Future enhancements may include integration with microcontrollers, IoT-based monitoring, and occupancy counting features.
 
 Overall, the project successfully demonstrates the practical implementation of basic electronics and digital logic principles to solve a real-world problem in an efficient and scalable manner.
+
+ Hardware Components:
+
+1. IR Break Beam Sensor Modules (2 pairs)
+   Used to detect entry and exit by sensing interruption of infrared beams across the doorway.
+
+2. 7408 IC (Quad 2-input AND Gate)
+   Used for sequence detection. It identifies whether Sensor A is triggered before Sensor B (entry) or vice versa (exit).
+
+3. 7400 IC (Quad 2-input NAND Gate)
+   Configured as an SR latch to store the occupancy state (Occupied/Vacant).
+
+4. 7404 IC (Hex Inverter)
+   Used for signal inversion where required to maintain correct logic levels.
+
+5. LED Indicator
+   Displays room status:
+
+   * ON → Occupied
+   * OFF → Vacant
+
+6. Resistors
+
+   * 220Ω → Current limiting for LED
+   * 10kΩ → Pull-down resistors for stable sensor outputs
+
+7. Power Supply Module (5V regulated)
+   Provides stable voltage to sensors and ICs (via battery or USB).
+
+8. Breadboard & Jumper Wires
+   Used for prototyping and circuit connections.
